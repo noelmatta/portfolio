@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Noway Regular";
+    src: url("../styles/fonts/noway-regular-webfont.eot");
+    src:
+        url("../styles/fonts/noway-regular-webfont.woff") format("woff"),
+        url("../styles/fonts/noway-regular-webfont.woff2") format("woff2"),
+        url("../styles/fonts/noway-regular-webfont.svg#filename") format("svg");
+}
+
+.splashTitle {
+    color: #fff;
+}
+
+body {
+    font-family: 'Noway Regular', sans-serif;
+    font-size: 16px;
+}
+
+.logoTitle {
+    font-size: 5rem;
+    text-shadow: 2px 2px 8px $black;
+    width: 67%;
+
+}
+
+.titleNoelMatta {
+    color: $pumpkin;
+}
+
+.titleFunction {
+    color: $neon;
+    &:before {
+        content: '\A        ';
+        white-space: pre;
+    }
+}
