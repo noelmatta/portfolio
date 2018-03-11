@@ -34,3 +34,44 @@ body {
         white-space: pre;
     }
 }
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: $pumpkin;
+}
+
+.work .wrapper {
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        color: $darkBlue;
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-bottom: 3%;
+    }
+    p {
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+        clear: both;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        // padding-top: 2%;
+        // margin-bottom: 5%;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            float: left;
+            list-style-type: none;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            background-color: $grape;
+            padding: 5px 15px;
+            color: $cream;
+            font-weight: 700;
+            text-decoration: uppercase;
+        }
+    }
+}

@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "node-sass": "^4.7.1",
-    "npm": "^5.7.1"
+    "npm": "^5.7.1",
+    "typed.js": "^2.0.6"
   }
 }

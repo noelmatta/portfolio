@@ -24,13 +24,23 @@ nav {
         color: $navLinks;
         text-decoration: none;
         font-weight: 700;
+        &:before {
+            content: '\{ ';
+            color: transparent;
+        }
+        &:after {
+            content: ' \} ';
+            color: transparent;
+        }
         &:hover, &:focus {
             color: $pumpkin;
             &:before {
-                content: '\{ '
+                content: '\{ ';
+                color: $pumpkin;
             }
             &:after {
-                content: ' \} '
+                content: ' \} ';
+                color: $pumpkin;
             }
         }
         &:active {
