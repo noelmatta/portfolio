@@ -484,6 +484,41 @@ form input[type="submit"] {
   background-color: #07002c;
   border: 2px solid #fafafa; }
 
+footer {
+  -webkit-box-shadow: inset 0px 3px 10px 0px rgba(7, 0, 44, 0.5);
+  -moz-box-shadow: inset 0px 3px 10px 0px rgba(7, 0, 44, 0.5);
+  box-shadow: inset 0px 3px 10px 0px rgba(7, 0, 44, 0.5);
+  position: absolute;
+  bottom: 0;
+  height: 6vh;
+  background-color: #fafafa;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  footer .wrapper {
+    display: flex;
+    align-items: center; }
+    footer .wrapper .legalInfo {
+      float: left;
+      height: 100%;
+      flex: 2 0 auto;
+      font-size: 1.2rem; }
+    footer .wrapper nav {
+      max-width: 15%;
+      flex: 1 0 auto;
+      float: right; }
+      footer .wrapper nav ul li a {
+        color: #07002c;
+        font-size: 1.5rem; }
+        footer .wrapper nav ul li a:hover, footer .wrapper nav ul li a:focus {
+          color: #07002c; }
+          footer .wrapper nav ul li a:hover:before, footer .wrapper nav ul li a:focus:before {
+            content: '\{ ';
+            color: #07002c; }
+          footer .wrapper nav ul li a:hover:after, footer .wrapper nav ul li a:focus:after {
+            content: ' \} ';
+            color: #07002c; }
+
 @media (max-width: 940px) {
   #piece1, #piece2, #piece3, #piece4, #piece5 {
     display: block; }

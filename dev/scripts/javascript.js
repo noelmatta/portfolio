@@ -12,6 +12,7 @@ $("main").onepage_scroll({
   direction: "vertical"
 });
 
+
 const portfolio = {};
 
 portfolio.pieceToggle = () => {

@@ -65,3 +65,46 @@ form {
         border: 2px solid $cream;
     }
 }
+
+footer {
+    -webkit-box-shadow: inset 0px 3px 10px 0px rgba(7,0,44,0.5);
+    -moz-box-shadow: inset 0px 3px 10px 0px rgba(7,0,44,0.5);
+    box-shadow: inset 0px 3px 10px 0px rgba(7,0,44,0.5);    
+    position: absolute;
+    bottom: 0;
+    height: 6vh;
+    background-color: $cream;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        .legalInfo {
+            float: left;
+            height: 100%;
+            flex: 2 0 auto;
+            font-size: 1.2rem;
+        }
+        nav {
+            max-width: 15%;
+            flex: 1 0 auto;
+            float: right;
+            ul li a {
+                color: $darkBlue;
+                font-size: 1.5rem;
+                &:hover, &:focus {
+                    color: $darkBlue;
+                        &:before {
+                            content: '\{ ';
+                            color: $darkBlue;
+                        }
+                        &:after {
+                            content: ' \} ';
+                            color: $darkBlue;
+                }
+                }
+            }
+        }
+    }
+}
