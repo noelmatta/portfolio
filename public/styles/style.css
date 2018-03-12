@@ -139,6 +139,9 @@ body {
   max-width: 1280px;
   margin: 0 auto; }
 
+section {
+  height: 100vh; }
+
 @font-face {
   font-family: "Noway Regular";
   src: url("../styles/fonts/noway-regular-webfont.eot");
@@ -373,15 +376,111 @@ hr {
 
 .skills {
   background-color: #ffae00; }
+  .skills .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto); }
+    .skills .wrapper h1 {
+      grid-column: 1 / 4;
+      margin-bottom: 10px; }
+    .skills .wrapper .toolbox {
+      grid-column: 1 / 3;
+      grid-row: 2 / 5;
+      border-right: 2px dotted #07002c;
+      padding-right: 5%;
+      height: 75%; }
+    .skills .wrapper .learning {
+      padding-left: 10%;
+      grid-column: 3 / 4;
+      grid-row: 2;
+      border-bottom: 2px dotted #07002c; }
+      .skills .wrapper .learning i, .skills .wrapper .learning svg {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 12%; }
+    .skills .wrapper .hobbies {
+      padding-left: 10%;
+      grid-column: 3;
+      grid-row: 3; }
+      .skills .wrapper .hobbies div {
+        width: calc(100% / 3);
+        padding: 7%;
+        height: 25%; }
 
-i, svg {
-  font-size: 8rem;
-  color: #07002c; }
+.hobbies h2, .toolbox h2, .learning h2 {
+  color: #07002c;
+  text-transform: uppercase; }
+
+.hobbies i, .hobbies svg, .toolbox i, .toolbox svg, .learning i, .learning svg {
+  font-size: 7rem; }
+
+.hobbies i, .hobbies svg, .hobbies div, .toolbox i, .toolbox svg, .toolbox div, .learning i, .learning svg, .learning div {
+  width: 20%;
+  height: 21%;
+  color: #07002c;
+  padding: 2.5%;
+  float: left; }
+
+.hobbies div img, .toolbox div img, .learning div img {
+  padding-bottom: 35%;
+  width: 100%; }
 
 .contact {
   background-color: #07002c; }
   .contact h1 {
     color: #fafafa; }
+
+.contactPic {
+  width: 42%;
+  float: left; }
+
+.contactForm {
+  width: 58%;
+  color: #fafafa;
+  float: left; }
+  .contactForm p {
+    font-size: 1.5rem;
+    margin-top: 0; }
+  .contactForm h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+    .contactForm h3 a {
+      color: #ffae00;
+      text-decoration: none; }
+      .contactForm h3 a:hover, .contactForm h3 a:focus {
+        color: #91ff41; }
+      .contactForm h3 a:active {
+        color: #fafafa; }
+
+form input[type="text"], form textarea {
+  font-size: 1.3rem;
+  background-color: #07002c;
+  color: #fafafa;
+  padding: 15px 30px; }
+
+form input[type="text"] {
+  border-left: none;
+  border-bottom: 2px solid #fafafa;
+  border-top: none;
+  border-right: none;
+  margin-right: 3%;
+  width: 50%;
+  margin-bottom: 3%; }
+
+form textarea {
+  border: 2px solid #fafafa;
+  width: 70%;
+  margin-top: 3%;
+  margin-bottom: 3%; }
+
+form input[type="submit"] {
+  text-transform: uppercase;
+  display: block;
+  color: #fafafa;
+  font-size: 1.2rem;
+  padding: 8px 35px;
+  background-color: #07002c;
+  border: 2px solid #fafafa; }
 
 @media (max-width: 940px) {
   #piece1, #piece2, #piece3, #piece4, #piece5 {

@@ -4,3 +4,64 @@
         color: $cream;
     }
 }
+
+.contactPic {
+    width: 42%;
+    float: left;
+}
+.contactForm {
+    width: 58%;
+    color: $cream;
+    float: left;
+    p {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    h3 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        a {
+            color: $pumpkin;
+            text-decoration: none;
+            &:hover, &:focus {
+                color: $neon;
+            }
+            &:active {
+                color: $cream;
+            }
+        }
+    }
+}
+
+form {
+    input[type="text"], textarea {
+        font-size: 1.3rem;
+        background-color: $darkBlue;
+        color: $cream;
+        padding: 15px 30px;
+    }
+    input[type="text"] {
+        border-left: none;
+        border-bottom: 2px solid $cream;
+        border-top: none;
+        border-right: none;
+        margin-right: 3%;
+        width: 50%;
+        margin-bottom: 3%;
+    }
+    textarea {
+        border: 2px solid $cream;
+        width: 70%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    input[type="submit"] {
+        text-transform: uppercase;
+        display: block;
+        color: $cream;
+        font-size: 1.2rem;
+        padding: 8px 35px;
+        background-color: $darkBlue;
+        border: 2px solid $cream;
+    }
+}
