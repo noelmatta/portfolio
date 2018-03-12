@@ -378,6 +378,11 @@ i, svg {
   font-size: 8rem;
   color: #07002c; }
 
+.contact {
+  background-color: #07002c; }
+  .contact h1 {
+    color: #fafafa; }
+
 @media (max-width: 940px) {
   #piece1, #piece2, #piece3, #piece4, #piece5 {
     display: block; }
