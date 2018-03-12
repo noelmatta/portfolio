@@ -165,7 +165,7 @@ body {
 .titleFunction {
   color: #91ff41; }
   .titleFunction:before {
-    content: '\A        ';
+    content: '\A';
     white-space: pre; }
 
 h1 {
@@ -343,7 +343,7 @@ hr {
   width: 100%;
   position: absolute;
   bottom: 0;
-  overflow: auto; }
+  overflow: hidden; }
   .portfolioBrowser ul {
     display: block;
     padding-left: 0; }
@@ -367,7 +367,8 @@ hr {
       text-transform: uppercase; }
       .portfolioBrowser ul li:hover {
         background-color: #fafafa;
-        color: #07002c; }
+        color: #07002c;
+        transform: scale(1.2); }
       .portfolioBrowser ul li:last-of-type {
         border-right: 1px solid #fafafa; }
 
@@ -397,7 +398,8 @@ hr {
       .skills .wrapper .learning i, .skills .wrapper .learning svg {
         width: 50%;
         text-align: center;
-        margin-bottom: 12%; }
+        margin-bottom: 12%;
+        height: 30%; }
     .skills .wrapper .hobbies {
       padding-left: 10%;
       grid-column: 3;

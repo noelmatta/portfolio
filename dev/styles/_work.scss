@@ -34,7 +34,7 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    overflow: auto;
+    overflow: hidden;
     ul {
         display: block;
         padding-left: 0;
@@ -60,6 +60,7 @@
                 &:hover {
                     background-color: $cream;
                     color: $darkBlue;
+                    transform: scale(1.2);
                 }
                 &:last-of-type {
                     border-right: 1px solid $cream;
