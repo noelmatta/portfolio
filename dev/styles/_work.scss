@@ -40,7 +40,7 @@
         padding-left: 0;
         li {
             list-style-type: none;
-            a {
+             
                 text-decoration: none;
                 display: flex;
                 justify-content: center;
@@ -64,7 +64,13 @@
                 &:last-of-type {
                     border-right: 1px solid $cream;
                 }
-            }
+            
         }
     }
 }
+
+#piece1, #piece2, #piece3, #piece5 {
+    display: none;
+}
+
+
