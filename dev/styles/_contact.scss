@@ -94,14 +94,14 @@ footer {
                 color: $darkBlue;
                 font-size: 1.5rem;
                 &:hover, &:focus {
-                    color: $darkBlue;
+                    color: $grape;
                         &:before {
                             content: '\{ ';
-                            color: $darkBlue;
+                            color: $grape;
                         }
                         &:after {
                             content: ' \} ';
-                            color: $darkBlue;
+                            color: $grape;
                 }
                 }
             }
