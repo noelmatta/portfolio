@@ -6,26 +6,25 @@
         url("../styles/fonts/noway-regular-webfont.woff2") format("woff2"),
         url("../styles/fonts/noway-regular-webfont.svg#filename") format("svg");
 }
-
 .splashTitle {
     color: #fff;
 }
-
 body {
     font-family: 'Noway Regular', sans-serif;
     font-size: 16px;
 }
-
 .logoTitle {
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-shadow: 2px 2px 8px $black;
-    width: 67%;
+    width: 60%;
+    display: block;
 }
-
+.logoTitleMobile {
+    display: none;
+}
 .titleNoelMatta {
     color: $pumpkin;
 }
-
 .titleFunction {
     color: $neon;
     &:before {
@@ -33,13 +32,12 @@ body {
         white-space: pre;
     }
 }
-
 h1 {
+    margin-bottom: 15px;
     font-size: 4rem;
     text-transform: uppercase;
     color: $pumpkin;
 }
-
 .work .wrapper {
     h1 {
         text-align: center;
@@ -72,7 +70,19 @@ h1 {
         }
     }
 }
-
+.pieceDetails {
+    h2 {
+        margin-top: 0;
+    }
+    a {
+        text-decoration: none;
+        color: $pumpkin;
+        font-weight: 700;
+        &:hover, &:focus {
+            color: $neon;
+        }
+    }
+}
 .skills h1 {
     text-align: right;
     color: $cream;

@@ -1,4 +1,6 @@
-@media (max-width: 1279px) { 
+
+
+@media (max-width: 1280px) { 
     .wrapper {
         padding: 0 2%;
     }
@@ -8,11 +10,15 @@
     .logoTitle {
         font-size: 4rem;
         text-shadow: 1px 1px 8px $black;
-        width: 67%;
+        width: 50%;
     }
     .quote {
         padding: 2% 8% 2% 6%;
         min-height: 71vh;
+    }
+    .introduction {
+        max-height: 69vh;
+        padding: 2% 8%;
     }
     .pieceDisplay {
         width: 40%;
@@ -34,7 +40,7 @@
         }
     }
     .skills .wrapper .learning i, .skills .wrapper .learning svg {
-        margin-bottom: 4%;
+        margin-bottom: 8%;
     }
     .contactPic {
         width: 25%;
@@ -58,6 +64,13 @@
     }
     footer .wrapper .legalInfo {
         font-size: 1rem;
+    }
+    .hobbies {
+        div {
+            img {
+                padding-bottom: 55%;
+            }
+        }
     }
 }
 
@@ -90,4 +103,33 @@
     // .portfolioBrowser {
     //     display: none;
     // }
+}
+
+@media (max-width: 700px) {
+    .logoTitle {
+        display: none;
+    }
+    .logoTitleMobile {
+        display: block;
+        margin: 0 auto;
+        font-size: 10rem;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .quote {
+        min-height: 65vh;
+    }
+    .contactPic {
+        display: none;
+    }
+    .contact .wrapper {
+        text-align: center;
+    }
+    .contactForm {
+        width: 100%;
+    }
+    footer .wrapper nav {
+        max-width: 30%;
+    }
+    
 }
