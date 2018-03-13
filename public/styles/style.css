@@ -157,7 +157,7 @@ body {
 .logoTitle {
   font-size: 4.5rem;
   text-shadow: 2px 2px 8px #000;
-  width: 60%;
+  width: 55%;
   display: block; }
 
 .logoTitleMobile {
@@ -228,7 +228,8 @@ h1 {
   .splash .wrapper {
     margin-top: 4%;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    align-items: flex-start; }
 
 nav {
   flex: 2 0 auto; }
@@ -261,7 +262,11 @@ nav {
       color: #7d58a0; }
 
 .logo {
-  flex: 2 0 auto; }
+  flex: 2 0 auto;
+  color: #fafafa;
+  font-size: 2.9rem; }
+  .logo p {
+    margin: 0; }
 
 hr {
   margin: 20px 0;
@@ -339,7 +344,7 @@ hr {
   margin-top: 5%; }
 
 .pieceDisplay {
-  width: 39%;
+  width: 42%;
   float: left; }
   .pieceDisplay img {
     width: 100%; }
@@ -380,9 +385,8 @@ hr {
       text-align: center;
       float: left;
       word-wrap: wrap;
-      font-size: 1.6rem;
-      padding: 5%;
-      height: 15vh;
+      font-size: 1.3rem;
+      padding: 2%;
       width: 20%;
       border-left: 1px solid #fafafa;
       list-style-type: none;
@@ -392,7 +396,8 @@ hr {
       .portfolioBrowser ul li:hover {
         background-color: #fafafa;
         color: #07002c;
-        transform: scale(1.2); }
+        transform: scale(1.2);
+        border-top: 4px solid #ffae00; }
       .portfolioBrowser ul li:last-of-type {
         border-right: 1px solid #fafafa; }
 
@@ -527,7 +532,6 @@ footer {
     align-items: center; }
     footer .wrapper .legalInfo {
       float: left;
-      height: 100%;
       flex: 2 0 auto;
       font-size: 1.2rem; }
     footer .wrapper nav {
@@ -593,10 +597,10 @@ footer {
   .hobbies div img {
     padding-bottom: 55%; } }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .portfolioBrowser ul li {
     flex-direction: row;
-    height: 22vh; }
+    height: 15vh; }
   .contactForm p {
     font-size: 1.1rem; }
   .contactForm h3 {
@@ -604,9 +608,35 @@ footer {
   .quote {
     min-height: 75vh; }
   footer .wrapper nav {
-    max-width: 22%; } }
+    max-width: 22%; }
+  .skills .wrapper {
+    grid-template-columns: repeat(1, 1fr); }
+    .skills .wrapper .toolbox {
+      margin: 0 auto;
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+      padding-right: 0;
+      border-right: none; }
+      .skills .wrapper .toolbox i, .skills .wrapper .toolbox svg {
+        font-size: 4rem; }
+      .skills .wrapper .toolbox i, .skills .wrapper .toolbox svg, .skills .wrapper .toolbox div {
+        text-align: center;
+        width: 14%;
+        color: #07002c;
+        margin-bottom: 1%;
+        float: left; }
+      .skills .wrapper .toolbox div img {
+        width: 80%; }
+    .skills .wrapper .learning {
+      display: none; }
+    .skills .wrapper .hobbies {
+      display: none; }
+  .quote {
+    display: none; }
+  .introduction {
+    max-width: 100%; } }
 
-@media (max-width: 700px) {
+@media (max-width: 933px) {
   .logoTitle {
     display: none; }
   .logoTitleMobile {
@@ -615,6 +645,27 @@ footer {
     font-size: 10rem;
     padding-top: 20%;
     padding-bottom: 20%; }
+  .piece {
+    margin: 0 auto; }
+  .pieceDisplay {
+    display: none; }
+  .pieceDetails {
+    text-align: center;
+    width: 100%; }
+    .pieceDetails p {
+      margin-top: 0;
+      padding-top: 0 !important; }
+    .pieceDetails ul {
+      display: none; }
+  .portfolioBrowser ul li {
+    font-size: 1rem;
+    height: 10vh; } }
+
+@media (max-width: 800px) {
+  footer .wrapper nav {
+    display: none; } }
+
+@media (max-width: 700px) {
   .quote {
     min-height: 65vh; }
   .contactPic {
@@ -623,5 +674,33 @@ footer {
     text-align: center; }
   .contactForm {
     width: 100%; }
-  footer .wrapper nav {
-    max-width: 30%; } }
+    .contactForm input[type="submit"] {
+      margin: 0 auto; } }
+
+@media (max-width: 480px) {
+  .splash nav {
+    display: block;
+    margin-top: 20px; }
+  .logo {
+    text-align: center; }
+  .portfolioBrowser ul li {
+    font-size: 0.8rem;
+    height: 8vh; } }
+
+@media (max-width: 430px) {
+  .about div h1 {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 2.5rem; }
+  .introduction {
+    max-height: initial; }
+  .contact h1 {
+    font-size: 2.5rem;
+    margin: 0 auto;
+    padding: 20px 0; }
+  .contactForm p {
+    font-size: 1.3rem; } }
+
+@media (max-width: 380px) {
+  .introduction p {
+    font-size: 1rem; } }
