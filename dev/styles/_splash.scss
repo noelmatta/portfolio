@@ -11,8 +11,10 @@
 }
 
 nav {
-    flex: 2 0 auto;
+    flex: 1 0 auto;
     ul {
+        width: 60%;
+        float: right;
         margin: 0;
         padding-left: 0;
         display: flex;
