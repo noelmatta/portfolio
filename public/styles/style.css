@@ -658,18 +658,34 @@ footer {
       margin: 0 auto; } }
 
 @media (max-width: 480px) {
+  .viewPiece a {
+    text-decoration: underline;
+    background-color: #fafafa;
+    color: #7d58a0;
+    margin-right: 2%;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none; }
+    .viewPiece a:hover {
+      background-color: #fafafa;
+      color: #ffae00;
+      border: none; }
+  .work .wrapper h1 {
+    font-size: 2.5rem; }
+  .work .wrapper p {
+    font-size: 0.9rem; }
   .splash nav {
     display: block;
     margin-top: 20px; }
     .splash nav ul {
       width: 80%; }
-  .logo {
-    text-align: center; }
   .portfolioBrowser ul li {
     font-size: 0.8rem;
     height: 8vh; }
   .skills .wrapper {
     grid-template-areas: "header header header header" "toolbox toolbox toolbox toolbox" "learning learning learning learning" "hobbies hobbies hobbies hobbies"; }
+    .skills .wrapper h1 {
+      font-size: 2.5rem; }
     .skills .wrapper .toolbox {
       border: none; }
       .skills .wrapper .toolbox i, .skills .wrapper .toolbox svg, .skills .wrapper .toolbox div {
@@ -688,7 +704,9 @@ footer {
         font-size: 3rem;
         color: #07002c; }
     .skills .wrapper .hobbies {
-      width: 100%; } }
+      width: 100%; }
+  .contactForm p {
+    font-size: 0.9rem; } }
 
 @media (max-width: 430px) {
   .about div h1 {
@@ -700,9 +718,7 @@ footer {
   .contact h1 {
     font-size: 2.5rem;
     margin: 0 auto;
-    padding: 20px 0; }
-  .contactForm p {
-    font-size: 1.3rem; } }
+    padding: 20px 0; } }
 
 @media (max-width: 380px) {
   .introduction p {
