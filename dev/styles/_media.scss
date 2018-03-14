@@ -191,16 +191,22 @@
             font-size: 0.9rem;
         }
     }
+    .logo {
+        display: none;
+    }
     .splash nav {
         display: block;
         margin-top: 20px;
         ul {
-            width: 80%;
+            width: 100%;
         }
     }
-    .portfolioBrowser ul li {
-        font-size: 0.8rem;
-        height: 8vh;
+    .portfolioBrowser ul {
+        text-align: center;
+        li {
+            font-size: 0.8rem;
+            height: 8vh;
+        }
     }
     .learningTitle {
         margin-top: 0;

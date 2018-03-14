@@ -234,8 +234,6 @@ h1 {
 nav {
   flex: 1 0 auto; }
   nav ul {
-    width: 60%;
-    float: right;
     margin: 0;
     padding-left: 0;
     display: flex;
@@ -674,14 +672,18 @@ footer {
     font-size: 2.5rem; }
   .work .wrapper p {
     font-size: 0.9rem; }
+  .logo {
+    display: none; }
   .splash nav {
     display: block;
     margin-top: 20px; }
     .splash nav ul {
-      width: 80%; }
-  .portfolioBrowser ul li {
-    font-size: 0.8rem;
-    height: 8vh; }
+      width: 100%; }
+  .portfolioBrowser ul {
+    text-align: center; }
+    .portfolioBrowser ul li {
+      font-size: 0.8rem;
+      height: 8vh; }
   .learningTitle {
     margin-top: 0; }
   .skills .wrapper {
