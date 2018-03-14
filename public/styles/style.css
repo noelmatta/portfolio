@@ -682,6 +682,8 @@ footer {
   .portfolioBrowser ul li {
     font-size: 0.8rem;
     height: 8vh; }
+  .learningTitle {
+    margin-top: 0; }
   .skills .wrapper {
     grid-template-areas: "header header header header" "toolbox toolbox toolbox toolbox" "learning learning learning learning" "hobbies hobbies hobbies hobbies"; }
     .skills .wrapper h1 {
@@ -709,6 +711,8 @@ footer {
     font-size: 0.9rem; } }
 
 @media (max-width: 430px) {
+  .introduction p {
+    font-size: 0.9rem; }
   .about div h1 {
     margin: 0 auto;
     padding-bottom: 20px;
@@ -721,8 +725,6 @@ footer {
     padding: 20px 0; } }
 
 @media (max-width: 380px) {
-  .introduction p {
-    font-size: 1rem; }
   .portfolioBrowser ul li {
     font-size: 0.8rem;
     height: 10vh; } }
