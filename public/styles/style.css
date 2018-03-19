@@ -461,8 +461,7 @@ hr {
 .contactPic {
   width: 30%;
   margin-right: 4%;
-  float: left;
-  border: 1px solid black; }
+  float: left; }
   .contactPic img {
     width: 100%; }
 
@@ -533,7 +532,7 @@ footer {
       flex: 2 0 auto;
       font-size: 1.2rem; }
     footer .wrapper nav {
-      max-width: 15%;
+      max-width: 18%;
       flex: 1 0 auto;
       float: right; }
       footer .wrapper nav ul li a {
