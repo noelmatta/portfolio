@@ -63,11 +63,17 @@
                 background-color: $cream;
                 color: $darkBlue;
                 transform: scale(1.2);
-                border-top: 4px solid $pumpkin;
+                border-top: 5px solid $pumpkin;
             }
             &:last-of-type {
                 border-right: 1px solid $cream;
             }
+        }
+        li.active, li.active:hover {
+            background-color: $cream;
+            color: $darkBlue;
+            transform: scale(1.2);
+            border-top: 5px solid $pumpkin;
         }
     }
 }
@@ -75,4 +81,3 @@
 #piece1, #piece2, #piece3, #piece5 {
     display: none;
 }
-

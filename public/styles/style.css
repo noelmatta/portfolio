@@ -397,9 +397,14 @@ hr {
         background-color: #fafafa;
         color: #07002c;
         transform: scale(1.2);
-        border-top: 4px solid #ffae00; }
+        border-top: 5px solid #ffae00; }
       .portfolioBrowser ul li:last-of-type {
         border-right: 1px solid #fafafa; }
+    .portfolioBrowser ul li.active, .portfolioBrowser ul li.active:hover {
+      background-color: #fafafa;
+      color: #07002c;
+      transform: scale(1.2);
+      border-top: 5px solid #ffae00; }
 
 #piece1, #piece2, #piece3, #piece5 {
   display: none; }

@@ -12,8 +12,20 @@ $("main").onepage_scroll({
   direction: "vertical"
 });
 
-
 const portfolio = {};
+
+portfolio.switchActive = () => {
+  const portTabs = $('.portfolioBlock');
+  
+  for (var i = 0; i < portTabs.length; i++) {
+    portTabs[i].addEventListener('click', function () {
+      if ( portTabs.hasClass('active') ) {
+        portTabs.removeClass('active');
+        $(this).addClass('active');
+      }
+    });
+  }
+}
 
 portfolio.clearInput = () => {
   $('input').on('focus', function() {
@@ -36,8 +48,10 @@ portfolio.pieceToggle = () => {
 portfolio.events = () => {
   portfolio.pieceToggle();
   portfolio.clearInput();
+  portfolio.switchActive();
 }
 
 $(function () {
   portfolio.events();
+
 });
