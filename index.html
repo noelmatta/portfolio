@@ -115,7 +115,7 @@
 							<li>css</li>
 							<li>javascript</li>
 						</ul>
-						<p>When I started training in recreational archery 4 years ago, I was overwhelmed by the amount of factors to consider when purchasing a bow. This educational javascript-powered quiz asks new archers five questions then outputs recommended equipment specs so that first step into the bow shop isn't so daunting. 
+						<p>When I started training in recreational archery 4 years ago, I was overwhelmed by the amount of factors to consider when purchasing a bow. This educational javascript-powered quiz asks new archers five questions then outputs recommended equipment specs. 
 						</p>
 						<span class="viewPiece">
 							<a href="/archeryAssistant/" target="_blank">view demo</a>
@@ -139,7 +139,7 @@
 							<li>firebase</li>
 							<li>rest api</li>
 						</ul>
-						<p>In this paired-programming project, my partner (<a href="https://www.anastasiyacodes.com/" target="_blank">Anastasiya Melentyeva</a>) and I sent data back and forth between multiple APIs and Firebase to ultimately display campground / hiking trail recommendations with accompanying local bird sightings and weather conditions based on the user's inputted location. 
+						<p>In this paired-programming project, my partner (<a href="https://www.anastasiyacodes.com/" target="_blank">Anastasiya Melentyeva</a>) and I sent data between multiple APIs and Firebase to ultimately display campground / hiking trail recommendations with accompanying local bird sightings and weather conditions based on the user's location. 
 						</p>
 						<span class="viewPiece">
 							<a href="/campSite" target="_blank">view demo</a>
@@ -162,7 +162,7 @@
 							<li>react</li>
 							<li>rest api</li>
 						</ul>
-						<p>Ask any HackerYou alumni about the challenges they faced during the bootcamp and you will likely hear, "Coming up with ideas for projects!" almost immediately. This React app aims to help future students with the brainstorming process by presenting 15 random verbs, adjectives, and nouns in a mad-lib style idea generator.
+						<p>Ask any HackerYou alumni about challenges they faced during the bootcamp and you'll likely hear, "Coming up with ideas for projects!" This React app helps future students brainstorm by presenting 15 random verbs, adjectives, and nouns in a mad-lib style idea generator.
 						</p>
 						<span class="viewPiece">
 							<a href="/ideaGenerator/" target="_blank">view demo</a>
@@ -186,7 +186,7 @@
 							<li>rest api</li>
 							<li>firebase</li>
 						</ul>
-						<p>In collaboration with <a href="http://estheredell.com/" target="_blank">Esther Edell</a> and <a href="http://www.jordanguy.ca/" target="_blank">Jordan Guy</a>, I created a React app that connects to the Google Maps and Zomato APIs to produce a list of restaurants within 15km of an authenticated user's location. These dining establishments can also be saved through Firebase and retrieved again on future visits. 
+						<p>In collaboration with <a href="http://estheredell.com/" target="_blank">Esther Edell</a> and <a href="http://www.jordanguy.ca/" target="_blank">Jordan Guy</a>, I created a React app that connects to the Google Maps and Zomato APIs to produce a list of restaurants within 15km of an authenticated user's location. 
 						</p>
 						<span class="viewPiece">
 							<a href="https://dude-wheres-my-food.firebaseapp.com/" target="_blank">view demo</a>
@@ -196,14 +196,39 @@
 						</span>
 					</div>
 				</div>
+				<div class="clearfix piece" id="piece6">
+					<div class="pieceDisplay">
+						<img src="/public/images/sidneyLedson.png" alt="SnackerYou screenshot">
+					</div>
+					<div class="pieceDetails">
+						<h2>The Sidney Ledson Institute</h2>
+						<ul>
+							<li>wordpress</li>
+							<li>css</li>
+							<li>client services</li>
+							<li>seo</li>
+							<li>php</li>
+							<li>mysql</li>
+						</ul>
+						<p>Working directly with stakeholders, I led the revamping of the Sidney Ledson Institute's legacy online materials into a fully-responsive and redesigned site with integrated social media accounts. 
+						</p>
+						<span class="viewPiece">
+							<a href="http://www.sidneyledsoninstitute.net/" target="_blank">view live</a>
+						</span>
+						<span class="viewPiece">
+							<a href="https://web.archive.org/web/20160802075922/http://www.sidneyledsoninstitute.net" target="_blank">view legacy</a>
+						</span>
+					</div>
+				</div>
 			</div>
 			<div class="portfolioBrowser" id="portNav">
 				<ul>
-					<li class="portfolioBlock" name="piece1">PSD Conversion</li>
-					<li class="portfolioBlock" name="piece2">Archery Assistant</li>
-					<li class="portfolioBlock" name="piece3">Camp.Site</li>
-					<li class="portfolioBlock active" name="piece4">Idea Generator</li>
-					<li class="portfolioBlock" name="piece5">SnackerYou</li>
+					<li class="portfolioBlock" name="piece1">1</li>
+					<li class="portfolioBlock" name="piece2">2</li>
+					<li class="portfolioBlock" name="piece3">3</li>
+					<li class="portfolioBlock active" name="piece4">4</li>
+					<li class="portfolioBlock" name="piece5">5</li>
+					<li class="portfolioBlock" name="piece6">6</li>
 				</ul>
 			</div>
 		</section>
@@ -262,10 +287,14 @@
 						<p>Do you have a project or work opportunity that I can help you with? Let's make it happen. </p>
 						<h3>You can e-mail <a href="mailto:get@noelmatta.com">get[at]noelmatta.com</a> OR fill out this form:</h3>
 						<form action="/public/scripts/contact.php" method="POST">
-							<input type="text" value="Name" name="contactName" />
-							<input type="text" value="Email" name="contactEmail" />
-							<textarea name="contactMessage" cols="20" rows="4">Message</textarea>
-							<input type="submit" value="Send" />
+							<label for="name">Name</label>
+							<input type="text" value="Name" name="contactName" required />
+							<label for="email">Email</label>
+							<input type="text" value="Email" name="contactEmail" required />
+							<label for="contactMessage">Message</label>
+							<textarea name="contactMessage" cols="20" rows="4" required>Message</textarea>
+							<label for="submit"></label>
+							<button type="submit" value="Send" >Send</button>
 						</form>
 					</div>
 				</div>

@@ -116,7 +116,7 @@
         }
     }
     .portfolioBrowser ul li {
-        font-size: 1rem;
+        font-size: 0.9rem;
         height: 10vh;
     }
     .skills .wrapper {
@@ -159,7 +159,7 @@
     }
     .contactForm {
         width: 100%;
-        input[type="submit"] {
+        button {
             margin: 0 auto;
         }
     }    
@@ -204,7 +204,7 @@
     .portfolioBrowser ul {
         text-align: center;
         li {
-            font-size: 0.8rem;
+            font-size: 0.6rem;
             height: 8vh;
         }
     }

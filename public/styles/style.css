@@ -387,7 +387,7 @@ hr {
       word-wrap: wrap;
       font-size: 1.3rem;
       padding: 2%;
-      width: 20%;
+      width: calc(100% /  6);
       border-left: 1px solid #fafafa;
       list-style-type: none;
       background-color: #ffae00;
@@ -406,7 +406,7 @@ hr {
       transform: scale(1.2);
       border-top: 5px solid #ffae00; }
 
-#piece1, #piece2, #piece3, #piece5 {
+#piece1, #piece2, #piece3, #piece5, #piece6 {
   display: none; }
 
 .skills {
@@ -509,7 +509,7 @@ form textarea {
   margin-top: 3%;
   margin-bottom: 3%; }
 
-form input[type="submit"] {
+form button {
   text-transform: uppercase;
   display: block;
   color: #fafafa;
@@ -517,6 +517,13 @@ form input[type="submit"] {
   padding: 8px 35px;
   background-color: #07002c;
   border: 2px solid #fafafa; }
+  form button:active {
+    background-color: #fafafa;
+    color: #07002c;
+    border: 2px solid #07002c; }
+
+label {
+  display: none; }
 
 footer {
   -webkit-box-shadow: inset 0px 3px 10px 0px rgba(7, 0, 44, 0.5);
@@ -630,7 +637,7 @@ footer {
     .pieceDetails ul {
       display: none; }
   .portfolioBrowser ul li {
-    font-size: 1rem;
+    font-size: 0.9rem;
     height: 10vh; }
   .skills .wrapper .toolbox i, .skills .wrapper .toolbox svg, .skills .wrapper .toolbox div {
     font-size: 3rem; }
@@ -656,7 +663,7 @@ footer {
     text-align: center; }
   .contactForm {
     width: 100%; }
-    .contactForm input[type="submit"] {
+    .contactForm button {
       margin: 0 auto; } }
 
 @media (max-width: 480px) {
@@ -686,7 +693,7 @@ footer {
   .portfolioBrowser ul {
     text-align: center; }
     .portfolioBrowser ul li {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       height: 8vh; }
   .learningTitle {
     margin-top: 0; }

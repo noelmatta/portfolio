@@ -59,7 +59,7 @@ form {
         margin-top: 3%;
         margin-bottom: 3%;
     }
-    input[type="submit"] {
+    button {
         text-transform: uppercase;
         display: block;
         color: $cream;
@@ -67,7 +67,16 @@ form {
         padding: 8px 35px;
         background-color: $darkBlue;
         border: 2px solid $cream;
+        &:active {
+            background-color: $cream;
+            color: $darkBlue;
+            border: 2px solid $darkBlue;
+        }
     }
+}
+
+label {
+    display: none;
 }
 
 footer {
