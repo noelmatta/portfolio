@@ -387,7 +387,7 @@ hr {
       word-wrap: wrap;
       font-size: 1.3rem;
       padding: 2%;
-      width: calc(100% /  6);
+      width: calc(100% /  7);
       border-left: 1px solid #fafafa;
       list-style-type: none;
       background-color: #ffae00;
@@ -406,7 +406,7 @@ hr {
       transform: scale(1.2);
       border-top: 5px solid #ffae00; }
 
-#piece1, #piece2, #piece3, #piece5, #piece6 {
+#piece1, #piece2, #piece3, #piece5, #piece6, #piece7 {
   display: none; }
 
 .skills {
